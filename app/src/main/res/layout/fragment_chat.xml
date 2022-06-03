@@ -1,17 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
-    tools:context=".ChatFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    android:orientation="vertical"
+
+    android:background="@drawable/login"
+    tools:context=".MainActivity">
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="250dp"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:layout_marginRight="20dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:background="#FFFFFF"> </LinearLayout>-->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:text="Chat Fragment" />
+        android:layout_margin="30dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Hi User!"
+        android:textSize="40dp" />
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:ems="5"
+        android:gravity="left"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:ems="5"
+        android:gravity="left"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+    <!--    <CheckBox-->
+    android:id="@+id/checkBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:gravity="left"
+    <!--        android:text="ingat kata sandi" />-->
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpass"
+        android:layout_margin="30dp"
+        android:text="Login" />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum memiliki akun? Silahkan"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textAlignment="textStart"/>
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textAlignment="textEnd"/>
+    </LinearLayout>
+</LinearLayout>
