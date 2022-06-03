@@ -8,31 +8,30 @@
     android:gravity="center">
 
     <!-- TODO: Update blank fragment layout -->
-
     <TextView
         android:id="@+id/jdl1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:text="Form Pemesanan"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        android:gravity="center"/>
+        android:layout_gravity="center"/>
 
     <!--Nama Lengkap-->
     <EditText
         android:id="@+id/nm"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Nama Lengkap"
         android:ems="22"
         android:layout_marginLeft="50dp"
-        android:gravity="center"
         android:inputType="textPersonName"
         android:layout_below="@id/jdl1"
-        android:layout_margin="30dp"
-        android:textSize="12dp"/>
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"/>
 
     <!--E-mail-->
     <EditText
@@ -45,7 +44,7 @@
         android:inputType="textEmailAddress"
         android:layout_below="@id/nm"
         android:layout_marginTop="5dp"
-        android:textSize="12dp"/>
+        android:textSize="15sp"/>
 
     <!--Nomor Ponsel-->
     <EditText
@@ -58,7 +57,7 @@
         android:inputType="phone"
         android:layout_below="@id/mail"
         android:layout_marginTop="5dp"
-        android:textSize="12dp"/>
+        android:textSize="15sp"/>
 
     <!--Alamat-->
     <EditText
@@ -71,42 +70,33 @@
         android:ems="22"
         android:hint="Alamat"
         android:inputType="textLongMessage"
-        android:textSize="12dp" />
+        android:textSize="15sp" />
 
     <!--Tgl Pesan-->
     <EditText
         android:id="@+id/tgl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Tanggal Pemesanan"
+        android:hint="Tanggal Pesanan"
         android:ems="22"
         android:layout_marginLeft="50dp"
         android:inputType="date"
         android:layout_below="@id/alamat"
         android:layout_marginTop="5dp"
-        android:textSize="12dp"/>
+        android:textSize="15sp"/>
 
     <!--Jns Pesanan-->
-    <TextView
+    <EditText
         android:id="@+id/jns"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tgl"
-        android:layout_marginLeft="53dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="5dp"
-        android:inputType="textPhonetic"
-        android:text="Jenis Pesanan"
-        android:textSize="12dp" />
-
-    <Spinner
-        android:id="@+id/pilihjns"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tgl"
-        android:layout_alignRight="@id/tgl"
-        android:layout_marginLeft="185dp"
-        android:layout_marginTop="5dp"
-        android:entries="@array/jenis_pesanan" />
+        android:ems="22"
+        android:hint="Jenis Pesanan"
+        android:inputType="text"
+        android:textSize="15sp" />
 
     <!--Desk Pesanan-->
     <EditText
@@ -117,29 +107,49 @@
         android:ems="22"
         android:layout_marginLeft="50dp"
         android:inputType="textLongMessage"
-        android:layout_below="@id/pilihjns"
+        android:layout_below="@id/jns"
         android:layout_marginTop="5dp"
-        android:textSize="12dp"/>
+        android:textSize="15sp"/>
+
+    <!--Kategori-->
+    <TextView
+        android:id="@+id/ktg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desk"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="5dp"
+        android:text="Kategori"
+        android:textSize="15sp"/>
+    <Spinner
+        android:id="@+id/pilihktg"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desk"
+        android:layout_alignRight="@id/tgl"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/jenis_pesanan" />
+
 
     <!--Bukti Pembayaran-->
     <TextView
         android:id="@+id/bukti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/desk"
+        android:layout_below="@id/ktg"
         android:layout_marginLeft="53dp"
-        android:layout_marginTop="5dp"
-        android:inputType="textPhonetic"
+        android:layout_marginTop="10dp"
         android:text="Bukti Pembayaran"
-        android:textSize="12dp" />
+        android:textSize="15sp" />
     <ImageButton
         android:id="@+id/gbr"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@id/desk"
+        android:layout_below="@id/ktg"
         android:layout_marginLeft="185dp"
         android:layout_alignRight="@id/desk"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="10dp"/>
 
     <!--Button-->
     <Button
@@ -147,13 +157,9 @@
         android:layout_height="wrap_content"
         android:text="Kirim Form"
         android:layout_below="@id/gbr"
-        android:layout_marginTop="110dp"
+        android:layout_marginBottom="70dp"
         android:layout_alignRight="@id/gbr"
         android:id="@+id/button"
         android:onClick="kirimform"/>
-
-
-
-
 
 </RelativeLayout>
