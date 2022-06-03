@@ -1,14 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormFragment">
+    android:background="@drawable/back"
+    tools:context=".FormFragment"
+    android:gravity="center">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/jdl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Form Pemesanan"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!--Nama Lengkap-->
+    <EditText
+        android:id="@+id/nm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:ems="22"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:layout_below="@id/jdl1"
+        android:layout_margin="30dp"
+        android:textSize="12dp"/>
+
+    <!--E-mail-->
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:ems="22"
+        android:layout_marginLeft="50dp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/nm"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"/>
+
+    <!--Nomor Ponsel-->
+    <EditText
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Ponsel"
+        android:ems="22"
+        android:layout_marginLeft="50dp"
+        android:inputType="phone"
+        android:layout_below="@id/mail"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"/>
+
+    <!--Alamat-->
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:ems="22"
+        android:hint="Alamat"
+        android:inputType="textLongMessage"
+        android:textSize="12dp" />
+
+    <!--Tgl Pesan-->
+    <EditText
+        android:id="@+id/tgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Pemesanan"
+        android:ems="22"
+        android:layout_marginLeft="50dp"
+        android:inputType="date"
+        android:layout_below="@id/alamat"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"/>
+
+    <!--Jns Pesanan-->
+    <TextView
+        android:id="@+id/jns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tgl"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textPhonetic"
+        android:text="Jenis Pesanan"
+        android:textSize="12dp" />
+
+    <Spinner
+        android:id="@+id/pilihjns"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tgl"
+        android:layout_alignRight="@id/tgl"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/jenis_pesanan" />
+
+    <!--Desk Pesanan-->
+    <EditText
+        android:id="@+id/desk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi Pesanan"
+        android:ems="22"
+        android:layout_marginLeft="50dp"
+        android:inputType="textLongMessage"
+        android:layout_below="@id/pilihjns"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"/>
+
+    <!--Bukti Pembayaran-->
+    <TextView
+        android:id="@+id/bukti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desk"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textPhonetic"
+        android:text="Bukti Pembayaran"
+        android:textSize="12dp" />
+    <ImageButton
+        android:id="@+id/gbr"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/desk"
+        android:layout_marginLeft="185dp"
+        android:layout_alignRight="@id/desk"
+        android:layout_marginTop="5dp"/>
+
+    <!--Button-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kirim Form"
+        android:layout_below="@id/gbr"
+        android:layout_marginTop="110dp"
+        android:layout_alignRight="@id/gbr"
+        android:id="@+id/button"
+        android:onClick="kirimform"/>
+
+
+
+
+
+</RelativeLayout>
