@@ -1,159 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/back"
-    tools:context=".FormFragment"
-    android:gravity="center">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".FormFragment">
 
     <TextView
-        android:id="@+id/jdl1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:text="Form Pemesanan"
-        android:textColor="@color/white"
-        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
         android:textStyle="bold"
-        android:gravity="center"/>
+        android:textColor="@color/white"
+        android:text="Form Pesanan"
+        android:textSize="25dp" />
 
-    <!--Nama Lengkap-->
+<!--    Nama Lengkap-->
     <EditText
         android:id="@+id/nm"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:gravity="left"
         android:hint="Nama Lengkap"
-        android:ems="22"
-        android:layout_marginLeft="50dp"
-        android:gravity="center"
         android:inputType="textPersonName"
-        android:layout_below="@id/jdl1"
-        android:layout_margin="30dp"
-        android:textSize="12dp"/>
+        android:textSize="18sp" />
 
-    <!--E-mail-->
+<!--    Email-->
     <EditText
         android:id="@+id/mail"
-        android:layout_width="wrap_content"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:gravity="left"
         android:hint="E-mail"
-        android:ems="22"
-        android:layout_marginLeft="50dp"
         android:inputType="textEmailAddress"
-        android:layout_below="@id/nm"
-        android:layout_marginTop="5dp"
-        android:textSize="12dp"/>
+        android:textSize="18sp" />
 
-    <!--Nomor Ponsel-->
-    <EditText
-        android:id="@+id/no"
+<!--    Nomor Ponsel-->
+        <EditText
+            android:id="@+id/no"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Ponsel"
+            android:ems="10"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:inputType="phone"
+            android:textSize="18sp"/>
+
+        <!--Alamat-->
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:ems="10"
+            android:hint="Alamat"
+            android:inputType="textLongMessage"
+            android:textSize="18sp" />
+
+        <!--Tgl Pesan-->
+        <EditText
+            android:id="@+id/tgl"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Tanggal Pesanan"
+            android:ems="10"
+            android:layout_marginLeft="40dp"
+            android:gravity="left"
+            android:inputType="date"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"/>
+
+        <!--Jns Pesanan-->
+        <EditText
+            android:id="@+id/jns"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:ems="10"
+            android:hint="Jenis Pesanan"
+            android:inputType="text"
+            android:textSize="18sp" />
+
+        <!--Desk Pesanan-->
+        <EditText
+            android:id="@+id/desk"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi Pesanan"
+            android:ems="10"
+            android:layout_marginLeft="40dp"
+            android:inputType="textLongMessage"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:textSize="18sp"/>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btnlogin"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/txtpass"-->
+<!--        android:layout_margin="30dp"-->
+<!--        android:text="Login" />-->
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Nomor Ponsel"
-        android:ems="22"
-        android:layout_marginLeft="50dp"
-        android:inputType="phone"
-        android:layout_below="@id/mail"
-        android:layout_marginTop="5dp"
-        android:textSize="12dp"/>
+        android:orientation="horizontal"
+        android:layout_marginLeft="44dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori                              "
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:textAlignment="textStart" />
+        <Spinner
+            android:id="@+id/pilihktg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/jenis_pesanan"/>
+    </LinearLayout>
 
-    <!--Alamat-->
-    <EditText
-        android:id="@+id/alamat"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/no"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="5dp"
-        android:ems="22"
-        android:hint="Alamat"
-        android:inputType="textLongMessage"
-        android:textSize="12dp" />
+        android:orientation="horizontal"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bukti Pembayaran             "
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:textAlignment="textStart" />
+            <ImageButton
+                android:id="@+id/gbr"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@id/pilihktg"
+                android:layout_marginTop="10dp"/>
+    </LinearLayout>
 
-    <!--Tgl Pesan-->
-    <EditText
-        android:id="@+id/tgl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Tanggal Pemesanan"
-        android:ems="22"
-        android:layout_marginLeft="50dp"
-        android:inputType="date"
-        android:layout_below="@id/alamat"
-        android:layout_marginTop="5dp"
-        android:textSize="12dp"/>
+<!--        <Button-->
+<!--            android:id="@+id/btnlogin"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/txtpass"-->
+<!--            android:layout_margin="30dp"-->
+<!--            android:text="Login"-->
+<!--            -->
+<!--            />-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kirim Form"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/button"
+            android:onClick="kirimform"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="20dp"/>
 
-    <!--Jns Pesanan-->
-    <TextView
-        android:id="@+id/jns"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tgl"
-        android:layout_marginLeft="53dp"
-        android:layout_marginTop="5dp"
-        android:inputType="textPhonetic"
-        android:text="Jenis Pesanan"
-        android:textSize="12dp" />
-
-    <Spinner
-        android:id="@+id/pilihjns"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tgl"
-        android:layout_alignRight="@id/tgl"
-        android:layout_marginLeft="185dp"
-        android:layout_marginTop="5dp"
-        android:entries="@array/jenis_pesanan" />
-
-    <!--Desk Pesanan-->
-    <EditText
-        android:id="@+id/desk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Deskripsi Pesanan"
-        android:ems="22"
-        android:layout_marginLeft="50dp"
-        android:inputType="textLongMessage"
-        android:layout_below="@id/pilihjns"
-        android:layout_marginTop="5dp"
-        android:textSize="12dp"/>
-
-    <!--Bukti Pembayaran-->
-    <TextView
-        android:id="@+id/bukti"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/desk"
-        android:layout_marginLeft="53dp"
-        android:layout_marginTop="5dp"
-        android:inputType="textPhonetic"
-        android:text="Bukti Pembayaran"
-        android:textSize="12dp" />
-    <ImageButton
-        android:id="@+id/gbr"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/desk"
-        android:layout_marginLeft="185dp"
-        android:layout_alignRight="@id/desk"
-        android:layout_marginTop="5dp"/>
-
-    <!--Button-->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kirim Form"
-        android:layout_below="@id/gbr"
-        android:layout_marginTop="110dp"
-        android:layout_alignRight="@id/gbr"
-        android:id="@+id/button"
-        android:onClick="kirimform"/>
-
-
-
-
-
-</RelativeLayout>
+</LinearLayout>
