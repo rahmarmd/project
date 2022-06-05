@@ -13,7 +13,13 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/fragment_status.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/menu/bottom_navigation.xml" value="0.17314814814814813" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/menu/buttom_navigation.xml" value="0.1" />
-        <entry key="..\:/project/app/src/main/res/layout/fragment_chat.xml" value="0.22" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/project/app/src/main/res/layout/fragment_beranda.xml" value="0.2" />
+        <entry key="..\:/project/app/src/main/res/layout/fragment_blank.xml" value="0.2" />
+        <entry key="..\:/project/app/src/main/res/layout/fragment_chat.xml" value="0.33" />
         <entry key="..\:/project/app/src/main/res/layout/fragment_form.xml" value="0.2" />
         <entry key="..\:/project/app/src/main/res/layout/fragment_register.xml" value="0.2" />
       </map>
