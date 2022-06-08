@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/login"
     tools:context=".DaftarFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -16,16 +15,15 @@
     android:layout_marginTop="25dp"
     android:layout_gravity="center"
     android:textStyle="bold"
-    android:textColor="@color/white"
-    android:text="Datar Harga"
+    android:textColor="@color/black"
+    android:text="Daftar Harga"
     android:textSize="25dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="20dp"
-        android:background="@color/white">
+        android:layout_margin="20dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
