@@ -6,23 +6,23 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/drawable/home.xml" value="0.1165" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.1165" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.1165" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.1615" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1615" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/drawable/ic_launcher_background.xml" value="0.178" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/drawable/ic_upload.xml" value="0.1945" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/activity_register.xml" value="0.1068840579710145" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/fragment_call.xml" value="0.1" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/fragment_chat.xml" value="0.25" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/fragment_daftar.xml" value="0.25" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/fragment_form.xml" value="0.22" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/fragment_profil.xml" value="0.13489583333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/fragment_form.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/layout/fragment_status.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/menu/bottom_navigation.xml" value="0.17314814814814813" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/fbuttonnav/app/src/main/res/menu/buttom_navigation.xml" value="0.1" />
+        <entry key="..\:/project/app/src/main/res/drawable/bg_rounded.xml" value="0.154" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_register.xml" value="0.11548913043478261" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_splash_screen.xml" value="0.11865942028985507" />
+        <entry key="..\:/project/app/src/main/res/layout/fragment_beranda.xml" value="0.18" />
+        <entry key="..\:/project/app/src/main/res/layout/fragment_blank.xml" value="0.19583333333333333" />
         <entry key="..\:/project/app/src/main/res/layout/fragment_chat.xml" value="0.22" />
+        <entry key="..\:/project/app/src/main/res/layout/fragment_daftar.xml" value="0.18" />
         <entry key="..\:/project/app/src/main/res/layout/fragment_form.xml" value="0.2" />
+        <entry key="..\:/project/app/src/main/res/layout/fragment_profil.xml" value="0.2" />
         <entry key="..\:/project/app/src/main/res/layout/fragment_register.xml" value="0.2" />
       </map>
     </option>
