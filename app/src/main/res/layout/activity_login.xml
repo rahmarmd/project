@@ -24,9 +24,9 @@
         android:layout_marginTop="50dp"
         android:layout_gravity="center"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:text="Hi User!"
-        android:textSize="40dp" />
+        android:textColor="#4A1259"
+        android:text="HI USER!"
+        android:textSize="30dp" />
 
 
     <!--    <CheckBox-->
@@ -53,9 +53,9 @@
             android:layout_marginTop="16dp"
             android:ems="5"
             android:gravity="left"
-            android:hint="Email"
+            android:hint="E-mail"
             android:inputType="textEmailAddress"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
 
         <EditText
             android:id="@+id/txtpass"
@@ -66,9 +66,9 @@
             android:layout_marginBottom="20dp"
             android:ems="5"
             android:gravity="left"
-            android:hint="Password"
+            android:hint="Kata Sandi"
             android:inputType="textPassword"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
 
 
     </LinearLayout>
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtpass"
         android:layout_margin="30dp"
-        android:text="Login" />
+        android:text="Masuk"/>
 
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -91,7 +91,8 @@
             android:text="Belum memiliki akun? Silahkan "
             android:textStyle="normal"
             android:textSize="15sp"
-            android:textAlignment="textStart"/>
+            android:textAlignment="textStart"
+            android:textColor="#4A1259"/>
         <TextView
             android:id="@+id/textRegister"
             android:layout_width="wrap_content"
@@ -99,6 +100,7 @@
             android:text="Daftar"
             android:textStyle="bold"
             android:textSize="15sp"
-            android:textAlignment="textEnd"/>
+            android:textAlignment="textEnd"
+            android:textColor="#4A1259"/>
     </LinearLayout>
 </LinearLayout>

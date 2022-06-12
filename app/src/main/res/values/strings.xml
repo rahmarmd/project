@@ -8,43 +8,6 @@
         <item>Undangan</item>
     </string-array>
 
-    <string-array name="lihatbanner">
-        <item>Lihat Harga</item>
-        <item>Premium Rp. 500.000</item>
-        <item>Medium Rp. 200.000</item>
-        <item>Standart Rp. 100.000</item>
-    </string-array>
-    <string-array name="lihatbrosur">
-        <item>Lihat Harga</item>
-        <item>Premium Rp. 350.000</item>
-        <item>Medium Rp. 150.000</item>
-        <item>Standart Rp. 75.000</item>
-    </string-array>
-    <string-array name="lihatkemasan">
-        <item>Lihat Harga</item>
-        <item>Premium Rp. 600.000</item>
-        <item>Medium Rp. 450.000</item>
-        <item>Standart Rp. 200.000</item>
-    </string-array>
-    <string-array name="lihatlogo">
-        <item>Lihat Harga</item>
-        <item>Premium Rp. 500.000</item>
-        <item>Medium Rp. 250.000</item>
-        <item>Standart Rp. 100.000</item>
-    </string-array>
-    <string-array name="lihatpamflet">
-        <item>Lihat Harga</item>
-        <item>Premium Rp. 300.000</item>
-        <item>Medium Rp. 150.000</item>
-        <item>Standart Rp. 80.000</item>
-    </string-array>
-    <string-array name="lihatundangan">
-        <item>Lihat Harga</item>
-        <item>Premium Rp. 300.000</item>
-        <item>Medium Rp. 100.000</item>
-        <item>Standart Rp. 50.000</item>
-    </string-array>
-
     <string-array name="harga">
         <item>Pilih Kategori</item>
         <item>Premium</item>

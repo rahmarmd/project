@@ -22,14 +22,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:layout_marginBottom="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
         android:layout_gravity="center"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:text="Register"
-        android:textSize="40dp" />
+        android:textColor="@color/ungu"
+        android:text="DAFTAR AKUN"
+        android:textSize="30dp" />
+
 
     <EditText
         android:id="@+id/txtname"
@@ -85,7 +84,8 @@
             android:text="Sudah memiliki akun? Silahkan "
             android:textStyle="normal"
             android:textSize="15sp"
-            android:textAlignment="textStart"/>
+            android:textAlignment="textStart"
+            android:textColor="@color/ungu"/>
 
         <TextView
             android:id="@+id/textRegister"
@@ -94,7 +94,8 @@
             android:text="Masuk"
             android:textAlignment="textEnd"
             android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/ungu"/>
 
     </LinearLayout>
 
