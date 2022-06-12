@@ -2,23 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_beranda"
-        android:icon="@drawable/beranda"
+        android:icon="@drawable/a"
         android:title="Beranda"/>
 
     <item
         android:id="@+id/nav_daftar"
-        android:icon="@drawable/daftar"
+        android:icon="@drawable/b"
         android:title="Daftar Harga"/>
 
     <item
         android:id="@+id/nav_form"
-        android:icon="@drawable/form"
+        android:icon="@drawable/c"
         android:title="Form"/>
 
 
     <item
         android:id="@+id/nav_profil"
-        android:icon="@drawable/profil"
+        android:icon="@drawable/d"
         android:title="Profil"/>
 
 </menu>
