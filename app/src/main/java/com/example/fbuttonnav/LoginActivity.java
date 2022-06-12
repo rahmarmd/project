@@ -87,7 +87,6 @@ public class LoginActivity extends AppCompatActivity {
                 } else if (pesan.equals("WRONG")){
                     Toast.makeText(LoginActivity.this, "Invalid", Toast.LENGTH_SHORT).show();
                 } else  {
-
                     Toast.makeText(LoginActivity.this, "Terjadi kesalahan", Toast.LENGTH_SHORT).show();
                 }
             }

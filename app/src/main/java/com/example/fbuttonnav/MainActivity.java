@@ -45,9 +45,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_form:
                         selectedFragment = new FormFragment();
                         break;
-                    case R.id.nav_notifikasi:
-                        selectedFragment = new NotifikasiFragment();
-                        break;
                     case R.id.nav_profil:
                         selectedFragment = new ProfilFragment();
                         break;

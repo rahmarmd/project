@@ -80,17 +80,17 @@
             android:textSize="18sp" />
 
         <!--Tgl Pesan-->
-        <EditText
-            android:id="@+id/tgl"
-            android:layout_width="330dp"
-            android:layout_height="wrap_content"
-            android:hint="Tanggal Pesanan"
-            android:ems="10"
-            android:layout_marginLeft="20dp"
-            android:gravity="left"
-            android:inputType="date"
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"/>
+<!--        <EditText-->
+<!--            android:id="@+id/tgl"-->
+<!--            android:layout_width="330dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Tanggal Pesanan"-->
+<!--            android:ems="10"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:gravity="left"-->
+<!--            android:inputType="date"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:textSize="18sp"/>-->
 
         <!--Jns Pesanan-->
         <EditText
@@ -166,11 +166,9 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="Kirim Form"
-        android:id="@+id/button"
-        android:onClick="kirimform"
-        android:layout_marginTop="40dp"
+        android:id="@+id/buttonsubmit"
         android:layout_gravity="center"/>
 
 </LinearLayout>
