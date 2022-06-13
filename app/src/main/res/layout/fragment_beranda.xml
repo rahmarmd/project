@@ -76,7 +76,7 @@
 
                 </LinearLayout>
             </HorizontalScrollView>
-    </LinearLayout>
+
 
 
 
@@ -438,4 +438,5 @@
                  </LinearLayout>
              </LinearLayout>
         </HorizontalScrollView>
+    </LinearLayout>
     </ScrollView>
