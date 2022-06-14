@@ -133,9 +133,18 @@ public class FormFragment extends Fragment {
         iconupload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("image/*");
-                startActivityForResult(intent, IMG_REQUEST);
+                Toast.makeText(getActivity(), "iConUpload: setOncliclikListeners" ,Toast.LENGTH_LONG).show();
+                try {
+                    Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                    intent.setType("image/*");
+                    startActivityForResult(intent, IMG_REQUEST);
+                    Toast.makeText(getActivity(), "iConUpload: Endlistener" ,Toast.LENGTH_LONG).show();
+                }catch(Exception e){
+                    Toast.makeText(getActivity(), "iConUpload: Failed" ,Toast.LENGTH_LONG).show();
+
+                }
+
+
             }
         });
 
@@ -192,9 +201,13 @@ public class FormFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        Toast.makeText(this.getActivity(), "onActivityResult:Start" ,Toast.LENGTH_SHORT).show();
+
         if ( resultCode == RESULT_OK && requestCode == IMG_REQUEST && data != null) {
+            Toast.makeText(this.getActivity(), "onActivityResult" ,Toast.LENGTH_SHORT).show();
 
             Uri path = data.getData();
+            Toast.makeText(this.getActivity(), "Path: " + data.getData().toString(),Toast.LENGTH_LONG).show();
             try {
                 bitmap = MediaStore.Images.Media.getBitmap(this.getActivity().getContentResolver(), path);
 
@@ -224,6 +237,7 @@ public class FormFragment extends Fragment {
                     txtJenis.setText("");
                     txtDeskripsi.setText("");
                     Toast.makeText(getContext(), "Pesanan berhasil", Toast.LENGTH_SHORT).show();
+
                 } else if (pesan.equals("GAGAL")) {
                     Toast.makeText(getContext(), "Pemesanan gagal!", Toast.LENGTH_SHORT).show();
                 }
